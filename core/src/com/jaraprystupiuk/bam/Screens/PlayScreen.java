@@ -57,7 +57,7 @@ public class PlayScreen implements Screen {
         gameCam.position.set(gamePort.getWorldWidth() / 2, gamePort.getWorldHeight() / 2, 0);
 
 
-        world = new World(new Vector2(0, -10), true);
+        world = new World(new Vector2(0, 0), true);
 
 
         b2dr = new Box2DDebugRenderer();
@@ -80,15 +80,28 @@ public class PlayScreen implements Screen {
     }
 
     public void handleInput(float dt) {
-        if (Gdx.input.isKeyJustPressed(Input.Keys.UP)) {
-            player.b2body.applyLinearImpulse(new Vector2(0, 4f), player.b2body.getWorldCenter(), true);
+        //Esto lo frena cuando no esta apretando una tecla de movimiento
+        player.b2body.setLinearVelocity(new Vector2(0, 0));
+
+        if (Gdx.input.isKeyPressed(Input.Keys.UP)) {
+            //player.b2body.applyLinearImpulse(new Vector2(0, 0.05f), player.b2body.getWorldCenter(), true);
+            player.b2body.setLinearVelocity(new Vector2(0, 1.2f));
         }
+
+        if (Gdx.input.isKeyPressed(Input.Keys.DOWN)) {
+            //player.b2body.applyLinearImpulse(new Vector2(0, -0.1f), player.b2body.getWorldCenter(), true);
+            player.b2body.setLinearVelocity(new Vector2(0, -1.2f));
+        }
+
         if (Gdx.input.isKeyPressed(Input.Keys.RIGHT) && player.b2body.getLinearVelocity().x <= 2) {
-            player.b2body.applyLinearImpulse(new Vector2(0.1f, 0), player.b2body.getWorldCenter(), true);
+            //player.b2body.applyLinearImpulse(new Vector2(0.1f, 0), player.b2body.getWorldCenter(), true);
+            player.b2body.setLinearVelocity(new Vector2(1.2f, 0));
         }
         if (Gdx.input.isKeyPressed(Input.Keys.LEFT) && player.b2body.getLinearVelocity().x >= -2) {
-            player.b2body.applyLinearImpulse(new Vector2(-0.1f, 0), player.b2body.getWorldCenter(), true);
+            //player.b2body.applyLinearImpulse(new Vector2(-0.1f, 0), player.b2body.getWorldCenter(), true);
+            player.b2body.setLinearVelocity(new Vector2(-1.2f, 0));
         }
+
 
     }
 
@@ -100,6 +113,7 @@ public class PlayScreen implements Screen {
         player.update(dt);
 
         gameCam.position.x = player.b2body.getPosition().x;
+        gameCam.position.y = player.b2body.getPosition().y;
 
         gameCam.update();
         renderer.setView(gameCam);
