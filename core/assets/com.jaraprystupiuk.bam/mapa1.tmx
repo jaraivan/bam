@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="2018.08.06" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="11">
+ <tileset firstgid="1" source="alcantarillas.tsx"/>
+ <layer id="1" name="Capa de Patrones 1" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjAIIEBrCmAWIlaCYlQrmiQAxExSL0sgOdSDWgGJNOriZWMyKQx8rmh0ALyEKsQ==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Piso">
+  <object id="3" x="-0.5" y="316.75" width="163.25" height="3.25"/>
+  <object id="4" x="188.75" y="316.75" width="69.75" height="3.75"/>
+ </objectgroup>
+ <objectgroup id="3" name="Plataformas">
+  <object id="6" x="125.25" y="253" width="37.25" height="5.25"/>
+  <object id="7" x="205.25" y="268.5" width="37.25" height="6"/>
+  <object id="8" x="205" y="285" width="38" height="5.5"/>
+  <object id="10" x="284.75" y="300.5" width="35.25" height="5.5"/>
+ </objectgroup>
+</map>

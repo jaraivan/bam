@@ -1,0 +1,19 @@
+
+FanAndEnemies.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+fan
+  rotate: false
+  xy: 1, 1
+  size: 216, 60
+  orig: 216, 60
+  offset: 0, 0
+  index: -1
+enemigo
+  rotate: false
+  xy: 219, 2
+  size: 215, 59
+  orig: 215, 59
+  offset: 0, 0
+  index: -1

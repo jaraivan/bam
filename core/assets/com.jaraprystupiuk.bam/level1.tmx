@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="2018.08.06" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="9">
+ <tileset firstgid="1" source="../../../../../Desktop/Videojuegos/Mapa/sewer_1_2.tsx"/>
+ <tileset firstgid="353" source="../../../../../Desktop/Videojuegos/Mapa/redone charset by antifarea 3 sides.tsx"/>
+ <tileset firstgid="3181" source="../../../../../Desktop/Videojuegos/Mapa/sewer_1.tsx"/>
+ <layer id="1" name="Capa de Patrones 1" width="30" height="30" offsetx="-0.0568182" offsety="0">
+  <data encoding="base64" compression="zlib">
+   eJzNVr1SAkEMXhQaOsBr6PAKfzr1SegVF+4qBGfO0XEoLOABfAYehUczO5dIyOwvCGPxzd7lMvvtl2RzaSilzk6Mc0AH0AU0AZcnQBuQM94e4BHwBCgBE3wu8H2MIJ+Rxb9AjNCXbHyfPto57wwwB7zjarDE9woxY9/mzP8NfZdoG6JtxfzAtu7Xq+a8yyPjv/E2VLgOXXtOYc8F4AX2TOWlZxcuIs41PAIv+TTrVUv09uQdKP/do3vnOqOxQ83rhSPmNt5QDAmZh5fvYYs55w1p9OkO5aQSvBXyGnuohn26XZxNPNsz02y0Gq5bjIXR247U2Qpo5FobuD9pNlqpJs2Z7lF7zN0NxVbW/RXgmuEGv0Hv1sRr85P+sbVA+Qds6N9Qqu1dKBlvzB1KqYUMeYFTr2rudYfZeK5D+2Yq7T8NWnSB+ZW85lmpuH4V28d5Tbh4Kb55ZP4odyHdLTyj4fi28D7AmgqqD5/ujPHa9B7COxD6ZAxMbCZ1jjflH/HKXixtoRq/gzUVUmfq3S4O6M8pOlN7n6tmqU+n6JTx8fFiL92Zmcdqd/blczL1Q+4vv/nmBvEP/Z2ZX/G9I76bOflLbWdt7v8BoPnjM4GX/tkr9pw6o9juNeWna8lFruzz2T4zitz3B0ie7fU=
+  </data>
+ </layer>
+ <layer id="4" name="Capa de patrones 2" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA/cB8AO2kNggbaAaNgyIAEHGx6gvgBsncUEAcSBi5pILthWIKEgXbAIAScdLQrAYktiUVsFIyCUTA8wGi7mPoggYZmAwA4jwTN
+  </data>
+ </layer>
+ <objectgroup id="5" name="colisiones" visible="0">
+  <object id="8" x="1.25" y="478.25">
+   <polygon points="2,-92 252.25,-91.75 252.5,-28 449.25,-27.5 449,-64.5 256.5,-64 256.5,-96.25 209,-96.5 209,-188.75 380,-188.5 380,-128.25 316.5,-128.75 316.5,-123.75 433,-124 433,-240.25 380.25,-240.5 380,-192.25 204.25,-192.5 204.5,-160 49.5,-160.75 49.25,-204 177,-204.25 177,-220.5 352.5,-220 352.75,-268.75 380.75,-268.75 381,-253 432,-252.75 432.75,-285 448.25,-284.75 448.5,-448.25 44,-449.25 45.25,-316.25 193,-316 193.5,-350.5 188,-351.25 188.75,-320.75 48.5,-321 49,-380.25 188.25,-380.75 188.5,-365 316.5,-364.5 316.75,-317 364.5,-316.25 364.25,-273 348.75,-272.25 347.75,-223 176.5,-223.75 176.5,-256.25 29.5,-256.5 29,-204.75 45.25,-204.5 46.5,-160 0.25,-160.25 0.25,-205 16.5,-204.5 16.5,-256 0.75,-256 0.75,-284.5 225,-284.25 224,-335.25 301.5,-333.75 301.5,-335.5 221.5,-336.25 221.5,-288 0.5,-288.25 0.25,-477.5 477.5,-477.25 477.5,-447.75 461.25,-447.5 461.25,-285.25 476.5,-285 476.25,-256.5 460.25,-257 460.25,-96.75 289,-96.75 289,-129.25 241.25,-130 240.75,-156.5 352.25,-155.5 351.5,-160 237.25,-160.75 237.25,-124.5 285,-126.25 284.75,-92.5 476.75,-92.75 477.25,0 207.5,0.5 208.25,-64 125.5,-64 126,0.5 0,0 1,-95.25"/>
+  </object>
+ </objectgroup>
+</map>
