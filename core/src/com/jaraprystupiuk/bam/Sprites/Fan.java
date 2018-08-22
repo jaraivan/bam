@@ -9,7 +9,7 @@ import com.jaraprystupiuk.bam.Bam;
 import com.jaraprystupiuk.bam.Screens.PlayScreen;
 
 public class Fan extends Sprite {
-    public enum State {SUBIENDO, BAJANDO, IZQUIERDA, DERECHA, PARADO}
+    public enum State {SUBIENDO, BAJANDO, DERECHA, PARADO, DEESPALDAS}
 
     public State currentState;
     public State previousState;
@@ -19,10 +19,14 @@ public class Fan extends Sprite {
     private Animation<TextureRegion> fanDerecha;
     private Animation<TextureRegion> fanSubiendo;
     private Animation<TextureRegion> fanBajando;
+    private TextureRegion fanDeEspaldas;
+    private TextureRegion fanParadoDerecha;
 
     private float stateTimer;
 
     private boolean runningRight;
+    private boolean subio;
+    private boolean fueDerecha;
 
     public Fan(World world, PlayScreen screen) {
         super(screen.getAtlas().findRegion("fan"));
@@ -32,33 +36,40 @@ public class Fan extends Sprite {
         previousState = State.PARADO;
         stateTimer = 0;
         runningRight = true;
+        subio = false;
+
 
         Array<TextureRegion> frames = new Array<TextureRegion>();
 
         for (int i = 0; i < 3; i++) {
             frames.add(new TextureRegion(getTexture(), i * 20, 20, 16, 20));
         }
-        fanDerecha = new Animation(0.1f, frames);
+        fanDerecha = new Animation<TextureRegion>(0.1f, frames);
 
         frames.clear();
 
         for (int i = 0; i < 3; i++) {
             frames.add(new TextureRegion(getTexture(), i * 20, 0, 16, 20));
         }
-        fanSubiendo = new Animation(0.1f, frames);
+        fanSubiendo = new Animation<TextureRegion>(0.1f, frames);
 
         frames.clear();
 
         for (int i = 0; i < 3; i++) {
             frames.add(new TextureRegion(getTexture(), i * 20, 40, 16, 20));
         }
-        fanBajando = new Animation(0.1f, frames);
+        fanBajando = new Animation<TextureRegion>(0.1f, frames);
 
         frames.clear();
 
 
+        fanDeEspaldas = new TextureRegion(getTexture(), 20, 0, 16, 20);
+        fanParadoDerecha = new TextureRegion(getTexture(), 20, 20, 16, 20);
+
+
         defineCharacter();
         fanParado = new TextureRegion(getTexture(), 20, 40, 16, 20);
+
         setBounds(20, 40, 16 / Bam.PPM, 20 / Bam.PPM);
         setRegion(fanParado);
 
@@ -77,19 +88,29 @@ public class Fan extends Sprite {
         switch (currentState) {
             case DERECHA:
                 region = fanDerecha.getKeyFrame(stateTimer, true);
+                fueDerecha = true;
+                subio = false;
                 break;
             case SUBIENDO:
                 region = fanSubiendo.getKeyFrame(stateTimer, true);
+                subio = true;
+                fueDerecha = false;
                 break;
 
 
             case BAJANDO:
                 region = fanBajando.getKeyFrame(stateTimer, true);
+                subio = false;
+                fueDerecha = false;
                 break;
-            case IZQUIERDA:
 
             default:
-                region = fanParado;
+                if (subio)
+                    region = fanDeEspaldas;
+                else if (fueDerecha)
+                    region = fanParadoDerecha;
+                else
+                    region = fanParado;
                 break;
 
 

@@ -5,7 +5,7 @@
  <tileset firstgid="3181" source="../../../../../Desktop/Videojuegos/Mapa/sewer_1.tsx"/>
  <layer id="1" name="Capa de Patrones 1" width="30" height="30" offsetx="-0.0568182" offsety="0">
   <data encoding="base64" compression="zlib">
-   eJzNVr1SAkEMXhQaOsBr6PAKfzr1SegVF+4qBGfO0XEoLOABfAYehUczO5dIyOwvCGPxzd7lMvvtl2RzaSilzk6Mc0AH0AU0AZcnQBuQM94e4BHwBCgBE3wu8H2MIJ+Rxb9AjNCXbHyfPto57wwwB7zjarDE9woxY9/mzP8NfZdoG6JtxfzAtu7Xq+a8yyPjv/E2VLgOXXtOYc8F4AX2TOWlZxcuIs41PAIv+TTrVUv09uQdKP/do3vnOqOxQ83rhSPmNt5QDAmZh5fvYYs55w1p9OkO5aQSvBXyGnuohn26XZxNPNsz02y0Gq5bjIXR247U2Qpo5FobuD9pNlqpJs2Z7lF7zN0NxVbW/RXgmuEGv0Hv1sRr85P+sbVA+Qds6N9Qqu1dKBlvzB1KqYUMeYFTr2rudYfZeK5D+2Yq7T8NWnSB+ZW85lmpuH4V28d5Tbh4Kb55ZP4odyHdLTyj4fi28D7AmgqqD5/ujPHa9B7COxD6ZAxMbCZ1jjflH/HKXixtoRq/gzUVUmfq3S4O6M8pOlN7n6tmqU+n6JTx8fFiL92Zmcdqd/blczL1Q+4vv/nmBvEP/Z2ZX/G9I76bOflLbWdt7v8BoPnjM4GX/tkr9pw6o9juNeWna8lFruzz2T4zitz3B0ie7fU=
+   eJzNVr1SAjEQzik0dIjX0OEV/nTqk9ArBu4qBWdwdBwKC+4BfAYehUdzM7cry05+QRiLb3K32cmXb7PZbKaUOjkyTgFdwBmgBbg4AjqAgvH2AA+AR0AFmOB3if9jBPmMLP4lYoS+ZOPr9NHOeaeAGeAdR4Ml/s8RUzY3Y/5v6LtE2xBtNfMD26rfjJrzLg+M/8abqXAeutZ8hjUXgBdYM5WXvl04j9jX8AC85NNqRi3R25F3oPx3j+6da4/GDjmvF46Y23hDMSTkHl6+hi3mnDek0ac7dCZzwTtHXmMP5bBPt4uzhXt7YpqNVsN1g7EwejuROtsBjVxrhuuTZqOVctLs6Q61x9zdUGxl3l8CrhiucQ5qtyZem5/0j80FOn/Amt6GSm3uQsV4Y+5QSi7kyAucum64V11m42cdWjdXae80aNElnq/kNd9KxdWr2DrOc8LFS/EtIs+Pzi6ku417NBzfFt57GFNB+eHTnTNem959eAdCn4yBic2kOeN19Ue8shZLWyjHb2FMhdSZerfLPepzis7U2ufKWarTKTplfHy8WEu3euax2u59eZ9M9ZD7yzlf3yDe0N+e+RX/u2Le9MlfatNrc/8PAPUfnwm89GbX7Du1R7Hda9/5FMren+3So8h1fwBPnu4F
   </data>
  </layer>
  <layer id="4" name="Capa de patrones 2" width="30" height="30">
