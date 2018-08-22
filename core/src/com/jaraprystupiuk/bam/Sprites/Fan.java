@@ -148,8 +148,10 @@ public class Fan extends Sprite {
         b2body = world.createBody(bdef);
 
         FixtureDef fdef = new FixtureDef();
-        CircleShape shape = new CircleShape();
-        shape.setRadius(7 / Bam.PPM);
+        PolygonShape shape = new PolygonShape();
+        //CircleShape shape = new CircleShape();
+        //shape.setRadius(7 / Bam.PPM);
+        shape.setAsBox(5 / Bam.PPM, 8 / Bam.PPM);
 
         fdef.shape = shape;
         b2body.createFixture(fdef);
